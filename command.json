@@ -1,0 +1,52 @@
+{
+    "_appname": "Office 加密破解工具",
+    "_apptitle": "----------Office 加密破解工具----------",
+    "getOfficeHashString":{
+        "_name": "獲取Hash",
+        "_description": "取得Office Hash字符串可用於其他更有效率的暴力破解工具 如Hashcat 或 John the Ripper",
+        "_function": "get_Office_Hash_String"
+    },
+    "crackPW":{
+        "_name": "暴加破解",
+        "_description": "暴加破解Office 檔案",
+        "setCommonPasswordsList":{
+            "_name":"設定常見弱密碼",
+            "_description": "設定常見弱密碼清單",
+            "_function":"set_Common_Passwords_List"
+        },
+        "setBasesWordsList":{
+            "_name":"設定常見基礎詞",
+            "_description": "設定常見基礎字清單，用於基礎字 + 年份/數字字尾（遮罩攻擊）",
+            "_function":"set_Bases_Words"
+        },
+        "crack":{
+            "_name":"開始",
+            "_description": "開始暴力破解",
+            "_function":"office_Crack_PW"
+        }
+    },
+    "option":{
+        "_name":"設定",
+        "_description": "設定配置",
+        "show": {
+            "_name":"顯示可用選項",
+            "_description": "顯示可用選項",
+            "_function": "show_option"
+        },
+        "set": {
+            "_name":"設定選項",
+            "_description": "設定選項",
+            "_function": "set_option"
+        },
+        "save": {
+            "_name":"儲存選項",
+            "_description": "儲存選項",
+            "_function": "save_option"
+        },
+        "load": {
+            "_name":"重載選項",
+            "_description": "重載選項",
+            "_function": "load_option"
+        }
+    }
+}

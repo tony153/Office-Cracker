@@ -1,0 +1,2 @@
+import CLIengine
+CLIengine.start()
